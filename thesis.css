@@ -1,0 +1,352 @@
+/*----------------------------------------------------*/
+
+@font-face {  
+  font-family: "square721-ext";  
+  src: url(Square721ExBT-Roman.ttf); /* IE */  
+  src: local("square721-ext"), url(Square721ExBT-Roman.ttf) format("truetype");
+} 
+
+@font-face {  
+  font-family: "square721-bold-ext";  
+  src: url(square721-bold-ext.ttf); /* IE */  
+  src: local("square721-bold-ext"), url(square721-bold-ext.ttf) format("truetype");
+}  
+
+@font-face {  
+  font-family: "square721-roman";  
+  src: url(Square721BT-Roman.ttf); /* IE */  
+  src: local("square721-roman"), url(Square721BT-Roman.ttf) format("truetype");
+} 
+
+@font-face {  
+  font-family: "AkzidGroBEReg";  
+  src: url(AkzidGroBEReg.otf); /* IE */  
+  src: local("AkzidGroBEReg"), url(AkzidGroBEReg.otf) format("opentype");
+}
+
+body{
+
+overflow-x: hidden; 
+
+}
+
+ p{
+  font-family: "square721-roman", serif;
+  color: black;
+  letter-spacing: 1px;
+  word-spacing: 2px
+  width: 100%;
+}
+
+a{
+  color:black;
+text-decoration:none
+
+}
+
+.footnotes {
+  z-index: -5;
+  font-family: "square721-roman", serif;
+  color: black;
+  letter-spacing: 1.5px;
+  word-spacing: 2px;
+}
+
+.header{
+  padding-left: 15px;
+}
+
+.text{
+  z-index: -1;
+  font-size: 18px;
+  padding-left: 55%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  line-height: 140%;
+}
+
+/*.sources{
+ font-size: 18px;
+ padding-right: 10%;
+ padding-left: 50%;
+ padding-bottom: 2%;
+}*/
+
+.opening{
+    position:relative;
+    text-align: center;
+    padding-top: 23%;
+    padding-bottom: 23%;
+    width: 100vw
+  }
+
+.maintitle{
+  font-family: "square721-bold-ext", serif;
+  font-size: 40px;
+  line-height: 110%;
+}
+
+#submaintitle{
+  font-size: 20px;
+}
+
+.nav{
+  position: relative;
+  padding-bottom: 10%;
+  padding-left: 2%;
+}
+
+.title{
+ font-family: "square721-bold-ext", serif;
+ font-size: 30px;
+}
+
+.subtitle{
+  font-family: "square721-ext", serif;
+  font-size: 30px;
+  line-height: 130%;
+}
+
+
+.text-footnotes{
+  margin-top: -15px;
+  font-family: "square721-roman", serif;
+  display: block;
+  font-size: 10px;
+  position: absolute;
+  left: 40%;
+  width: 11%;
+  line-height: 110%;
+}
+
+.text-marker {
+  font-size: 9px;
+  position: relative;
+  top: -0.4em;
+}
+
+.img{
+  font-family: "square721-roman", serif;
+  z-index: -2;
+  font-size: 12px;
+  left: 5%;
+  position: absolute;
+  width: 25%
+}
+
+figure .img img { float : left }
+
+
+.page-break { display: none; } 
+#TABLE-OF-CONTENT { display: none; }
+.colophon { display: none; }
+label {
+  position: absolute;
+  left: 0;
+  display: none;
+}
+
+span.tab{
+  padding: 130px;
+}
+
+span.space{
+  padding: 200px;
+}
+
+.border-bottom {
+  z-index: -6;
+  position:fixed;
+  left: 0; top: 0; bottom: 50%;
+  margin-bottom: -15px;
+  height: 0;
+  width: 100%;
+  width: 100vw;
+
+  border-top: 5px solid rgb(0,0,255);
+
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.border-bottom {
+  -skrollr-animation-name: border-bottom;
+  z-index: -6;
+  position:fixed;
+  left: 0; top: 0; bottom: 50%;
+  margin-bottom: -15px;
+  height: 0;
+  width: 100%;
+  width: 100vw;
+
+  border-top: 5px solid rgb(0,0,255);
+
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.border-top {
+  z-index: -6;
+  position:fixed;
+  left: 0; top: 50%; bottom: 0;
+  margin-top: -15px;
+  height: 0;
+  width: 100%;
+  width: 100vw;
+
+  border-top: 5px solid black;
+
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.border-top {
+  -skrollr-animation-name: border-top;
+  z-index: -6;
+  position:fixed;
+  left: 0; top: 50%; bottom: 0;
+  margin-top: -15px;
+  height: 0;
+  width: 100%;
+  width: 100vw;
+
+  border-top: 5px solid black;
+
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*.border-top:before {
+  z-index: -3;
+  position: absolute;
+  bottom: 0;
+  width: 50vh;
+  height: 100%;
+  content: '';
+  background: none;
+  display: inline-block;
+}*/
+
+.border-right {
+  z-index: -3;
+  position:fixed;
+  left: 5%;
+  width: 0;
+  height: 100%;
+  height: 100vh;
+
+  border-right: 5px solid rgb(255,0,0);
+
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.border-right {
+  -skrollr-animation-name: border-right;
+  z-index: -3;
+  position:fixed;
+  left: 5%;
+  width: 0;
+  height: 100%;
+  height: 100vh;
+
+  border-right: 5px solid rgb(255,0,0);
+
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+.border-left {
+  z-index: -3;
+  position:fixed;
+  right: 50%; top: 0; bottom: 0;
+  left: 100px;
+  width: 0;
+  height: 100%;
+  height: 100vh;
+
+  border-right: 5px solid rgb(0,255,0);
+
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+
+}
+/*.border-left:before {
+  z-index: -3;
+  position: absolute;
+  right: 0;
+  width: 50vw;
+  height: 100%;
+  content: '';
+  background: none;
+  display: inline-block;
+
+}*/
+
+.border-left: {
+  -skrollr-animation-name: border-left;
+  z-index: -3;
+  position:fixed;
+  width: 0;
+  height: 100%;
+  height: 100vh;
+  border-right: 5px solid rgb(0,255,0);
+
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button {
+  font-family: "square721-ext", serif;
+    position: absolute;
+    background-color: black;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    left:55%;
+    padding: 20px;
+    width: 200px;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.mobileimg{
+
+  display:none;
+}
+
+.mobilefootnotes{
+
+  display:none;
+}
+
+
+/*----------------------------------------------------*/
